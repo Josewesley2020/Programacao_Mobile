@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lista de Atividades</string>
+    <string name="titulo">Atividades pendentes</string>
+    <string name="meu_nome">José Wesley</string>
+    <string name="nova_tarefa">Adicionar</string>
+
+</resources>

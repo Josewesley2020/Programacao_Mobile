@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My tasks</string>
+    <string name="login_aut">Login:</string>
+    <string name="senha_aut">Senha:</string>
+    <string name="entrar"> ENTRAR </string>
+    <string name="adicionar"> ADICIONAR </string>
+</resources>

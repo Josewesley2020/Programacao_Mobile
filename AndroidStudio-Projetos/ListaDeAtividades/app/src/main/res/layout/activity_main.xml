@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_marginTop="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/meu_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meu_nome"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="22dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/add_tarefa"
+        android:layout_width="411dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="124dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/linear1"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <Button
+            android:id="@+id/nova_tarefa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nova_tarefa"
+            android:onClick="adicionarTarefa"
+            app:layout_constraintTop_toBottomOf="@+id/tarefa" />
+
+
+        <EditText
+            android:id="@+id/adicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/nova_tarefa"
+            tools:layout_editor_absoluteX="81dp" />
+
+        <ListView
+            android:id="@+id/listaTarefas"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/adicionar"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descricao1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="Fique atento aos prazos."
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/add_tarefa"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <TextView
+        android:id="@+id/descricao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não atrase!"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/descricao1"
+        tools:layout_editor_absoluteX="115dp"
+        android:layout_marginTop="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
